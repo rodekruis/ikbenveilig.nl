@@ -1,0 +1,71 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html {
+    font-family: Calibri, Trebuchet, sans-serif;
+  }
+
+body {
+    font-size: inherit;
+}
+nav {
+    background-color:#66AEE2;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+
+nav a.button-collapse {
+    
+}
+
+p {
+  line-height: 2rem;
+}
+
+
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  background-color:#66AEE2;
+  margin: 0;
+}
+
+.logoTop{
+    height:64px
+}
+
+.footer-btn {
+  background-color: #66AEE2 !important; }
+

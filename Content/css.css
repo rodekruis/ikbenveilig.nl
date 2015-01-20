@@ -1,0 +1,436 @@
+body {
+    background-color: #fff;
+    color: #232323;
+    font-family: Calibri,Frutiger,"Frutiger Linotype",Univers,"Gill Sans","Gill Sans MT","Myriad Pro",Myriad,"DejaVu Sans Condensed","Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    max-width: 1000px;
+    min-width: 330px;
+}
+
+header,footer,nav,section {
+    display: block;
+    position: relative;
+}
+
+h2,h3 {
+    margin-top: 10px!important;
+}
+
+h1,h2,h3,h4,h5,h6,header,footer,nav,section,body,fieldset,div,table,tr,td {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 7px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ul,li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.marginVertical {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0;
+}
+
+.editor-field {
+    margin: .5em 0 0;
+}
+
+.field-validation-error {
+    color: red;
+}
+
+.validation-summary-errors {
+    color: red;
+    font-weight: 700;
+}
+
+#searchLink a,#imOkLink a {
+    font-weight: 700;
+}
+
+#searchLink a,#imOkLink a,#bottomButtons a,a.btn {
+    color: #000;
+    text-decoration: none;
+}
+
+header .top img {
+    padding-top: 5px;
+    height: 55px;
+}
+
+header .top .logoTop {
+    background: url(http://www.rodekruis.nl/_layouts/images/nrkinternet/1043/nrk_logo.gif) center 5px no-repeat scroll transparent;
+    height: 72px;
+}
+
+header .bottom,header .bottom td,header .bottom td div {
+    height: 60px;
+}
+
+header .bottom td {
+    width: 50%;
+}
+
+#translateSwitch {
+    background-color: #a6bbcf;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#translateSwitch span {
+    color: #fff;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+footer .top,footer .top td,footer .top td div {
+    height: 30px;
+}
+
+footer .top td {
+    width: 33.3333%;
+}
+
+footer .top td div {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+footer .bottom img {
+    height: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+footer .bottom .bottomLinks {
+    width: 177px;
+    margin: 0 auto;
+}
+
+footer .bottom .bottomLinks a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0 -5px 0 0;
+    padding: 0;
+}
+
+footer .bottom .bottomLinks img {
+    background-color: #fff;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+header .top img,footer .bottom img {
+    display: block;
+    margin: 0 auto;
+}
+
+header .bottom td,footer .top td {
+    cursor: pointer;
+    float: left;
+    background: #a6bbcf;
+    padding: 0 10px;
+}
+
+header .bottom table,footer .top table {
+    height: 100%;
+    width: 100%;
+}
+
+header .bottom table td,footer .top table td {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header .bottom table td>div,footer .top table td>div {
+    padding-top: 4px;
+    text-align: center;
+}
+
+header .bottom table td.left>div,footer .top table td.left>div,footer .top table td.middle>div {
+    border-right: 1px solid #ababab;
+}
+
+section#body {
+    background-color: #fff;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0;
+}
+
+section#body>div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 950px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#results .result {
+    border: 1px solid #000;
+    margin-top: 10px;
+    background-color: #a6bbcf;
+    padding: 5px;
+}
+
+#results .right .foundBtn {
+    height: 70px;
+    width: 90px;
+}
+
+.resultFound {
+    color: green;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#results .left {
+    float: left;
+    width: 70%;
+}
+
+#results .right {
+    float: right;
+}
+
+#results .result .left,#results .result .right {
+    margin-bottom: 10px;
+}
+
+#results .result .right {
+    width: 90px;
+}
+
+fieldset,h2.field,div.field {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+section#results .result>div {
+    float: left;
+    width: 50%;
+}
+
+fieldset .container>div>label {
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 125px;
+}
+
+fieldset .container>div>div,fieldset .container>div>div {
+    width: 60%;
+}
+
+fieldset .container>div>div>input[type=email],fieldset .container>div>div>input[type=text],fieldset .container>div>div>textarea,fieldset .container>div>div>input[type=date] {
+    float: none;
+    width: 95%;
+}
+
+section#results .result>div.clear {
+    width: 0;
+}
+
+fieldset .container>div>div>input[type=text] {
+    margin-bottom: 4px;
+}
+
+fieldset input[type=submit] {
+    float: right;
+    width: auto;
+}
+
+fieldset input[type=radio] {
+    width: auto;
+}
+
+fieldset .container div {
+    display: table;
+    width: 100%;
+}
+
+fieldset ul.disclaimer,fieldset ul.disclaimer li {
+    list-style: square outside none;
+    text-align: left;
+}
+
+#imOkForm input[type=submit] {
+    margin-top: 10px;
+}
+
+.socialMedia {
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+}
+
+.socialMedia>div {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.faqpage .answer {
+    padding-left: 25px;
+}
+
+header .top,footer .bottom {
+    background: #fff;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+}
+
+.req:after {
+    content: " *";
+    color: red;
+    font-weight: 700;
+}
+
+
+
+button.submit:hover {
+    border: #000 solid 1px;
+    cursor: pointer;
+}
+
+button.submit:active {
+    border: #000 solid 1px;
+}
+
+header .bottom td.selected,header .bottom td.selected:hover,footer .top td.selected,footer .top td.selected:hover {
+    background: #fff;
+}
+
+header td.selected,td.selected,td.selected:hover {
+    background: #fff;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header .bottom td:hover,footer .top td:hover,.btn:hover {
+    border: #000 solid 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button.submit {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #d83526;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-shadow: 1px 1px 0 #b23e35;
+    text-shadow: 1px 1px 0 #b23e35;
+    width: 100%;
+    background: url(driehoek.png) no-repeat 95% center;
+    background-color: #fe1a00;
+    background-image: url(driehoek.png),-webkit-gradient(linear,left top,left bottom,from(#ce0100),to(#fe1a00));
+    background-image: url(driehoek.png),-webkit-linear-gradient(top,#ce0100,#fe1a00);
+    background-image: url(driehoek.png),-moz-linear-gradient(top,#ce0100,#fe1a00);
+    background-image: url(driehoek.png),-ms-linear-gradient(top,#ce0100,#fe1a00);
+    background-image: url(driehoek.png),-o-linear-gradient(top,#ce0100,#fe1a00);
+    background-image: url(driehoek.png),linear-gradient(top,#ce0100,#fe1a00);
+    display: inline-block;
+    -moz-box-shadow: inset 0 1px 0 0 #f29c93;
+    -webkit-box-shadow: inset 0 1px 0 0 #f29c93;
+    box-shadow: inset 0 1px 0 0 #f29c93;
+    padding: 20px 15px 20px 6px;
+}
+
+button.landing {
+    margin-bottom: 5px;
+    padding: 10px 6px;
+}
+
+input[type=text]:focus:valid {
+    background: #fff url(valid.png) no-repeat 98% center;
+}
+
+input[type=text]:focus:invalid,input[type=text].input-validation-error:focus {
+    background: #fff url(invalid.png) no-repeat 98% center;
+}
+
+a img,fieldset,.socialMedia>div a,.socialMedia>div img {
+    border: none 0;
+}
+
+.center,fieldset div.center {
+    text-align: center;
+}
+
+.field-validation-valid,.validation-summary-valid,.hide {
+    display: none;
+}
+
+h2.field,fieldset ul.errors {
+    padding-bottom: 10px;
+}
+
+ul.errors li {
+    line-height: 0;
+}
+
+ul.errors li span {
+    line-height: 1.5em;
+}
+
+fieldset .container>div>label,section#results .result .left,fieldset ul.errors,fieldset ul.errors li {
+    text-align: left;
+}
+
+
+
+.btn.center {
+    margin-left: auto;
+    margin-right: auto;
+}
