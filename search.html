@@ -55,23 +55,23 @@
                     <li><a href="/nl-NL/Search"><i class="mdi-action-search left "></i> Ik zoek iemand</a></li>
                     <li><a href="/nl-NL/ImOk"><i class="mdi-action-thumb-up left"></i>Ik ben veilig</a></li>
                     <!-- Dropdown Trigger -->
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Taal<i class="mdi-action-language left"></i></a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Taal wijzigen<i class="mdi-action-language left"></i></a></li>
                  </ul>            
                 </div>
             </div>
         </div>
   </nav>
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <br><br>
-            <h1 class="header center" style="color: #fff">Ik zoek iemand</h1>
-            <div class="row center">
-              <h5 class="header col s12 " style="color: #fff;">Op deze pagina kan je een verwant zoeken. Je dient altijd de roepnaam en achternaam in te vullen waarmee je denkt dat jouw verwant zich zal registreren.</h5>
+    
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-action-search brown-text"></i></h3>
+                  <h4>Ik zoek iemand</h4>
+                  <p class="light">Zoek een verwant door zoveel mogelijk persoonsgegevens in te vullen.</p>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="parallax"><img src="Content/Images/background2.jpg" alt="background 1"></div>
     </div>
     <div class="container">
         <div class="section">     
@@ -97,18 +97,18 @@
                 </div>
                 
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12">
                   <i class="mdi-action-account-circle prefix"></i>
                   <input data-val="true" data-val-length="The field FirstName must be a string with a maximum length of 150." data-val-length-max="150" data-val-required="The FirstName field is required." id="FirstName" name="FirstName" type="text" value="" />
                   <label for="first_name">Roepnaam van gezochte</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12">
                     <i class="mdi-action-account-circle prefix"></i>
                   <input data-val="true" data-val-length="The field LastName must be a string with a maximum length of 150." data-val-length-max="150" data-val-required="The LastName field is required." id="LastName" name="LastName" type="text" value="" />
 
-                  <label for="last_name">Achternaam</label>
+                  <label for="last_name">Achternaam van gezochte</label>
                 </div>
               </div>
               <div class="row">
@@ -143,34 +143,34 @@
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s12">
-                   <input data-val="true" data-val-length="The field ZipCode must be a string with a maximum length of 10." data-val-length-max="10" id="ZipCode" name="ZipCode" type="text" value="" />
-                  <label for="ZipCode">Postcode van adres gezochte</label>
-                </div>
-              </div>
-              <div class="row">
                   <div class="col s12 center">
                     <h3><i class="mdi-maps-my-location prefix brown-text"></i></h3>
-                    <h4>Of een combinatie van straat en woonplaats</h4>
+                    <h4>Of het adres van de gezochte</h4>
                   </div>
-                </div>
+                </div>            
               <div class="row">
                 <div class="input-field col s12">
                    <input data-val="true" data-val-length="The field Street must be a string with a maximum length of 150." data-val-length-max="150" id="Street" name="Street" type="text" value="" />
 
-                  <label for="Street">Straat van adres gezochte</label>
+                  <label for="Street">Straatnaam zonder nummer</label>
+                </div>
+              </div>
+                <div class="row">
+                <div class="input-field col s12">
+                   <input data-val="true" data-val-length="The field ZipCode must be a string with a maximum length of 10." data-val-length-max="10" id="ZipCode" name="ZipCode" type="text" value="" />
+                  <label for="ZipCode">Postcode</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
                    <input data-val="true" data-val-length="The field City must be a string with a maximum length of 100." data-val-length-max="100" id="City" name="City" type="text" value="" />
 
-                  <label for="City">Woonplaats van gezochte</label>
+                  <label for="City">Woonplaats</label>
                 </div>
               </div>
               <div class="row">
                   <div class="col s12 center">
-                    <h3><i class="mdi-action-perm-contact-cal black-text"></i></h3>
+                    <h3><i class="mdi-action-search brown-text"></i></h3>
                     <h4>Zoeken</h4>
                     <p class="left-align light">Het resultaat van een succesvolle zoekopdracht is de voornaam, achternaam, registratiedatum, geboortedatum, de status en een publiek bericht.</p>
                     <button class="btn waves-effect waves-light" type="submit" name="action">Zoeken naar deze persoon
@@ -184,23 +184,24 @@
         </div>
 
   </div>
-     <div class="container">
+      <div class="container">
         <div class="section">
     
           <div class="row">
             <div class="col s12 center">
-              <a href="/" class="footer-btn waves-effect waves-light btn"><i class="mdi-action-home left"></i>Home</a>
-                    <a href="/nl-NL/Faq" class="footer-btn  waves-effect waves-light btn"><i class="mdi-action-question-answer left"></i>FAQ</a>
-                    <a href="/nl-NL/ServiceVoorwaarden" class="footer-btn waves-effect waves-light btn"><i class="mdi-hardware-security left"></i>Privacy</a>
+                <a href="/" class="footer-btn waves-effect waves-light btn"><i class="mdi-action-home left"></i>Home</a>
+                <a href="/nl-NL/Faq" class="footer-btn  waves-effect waves-light btn"><i class="mdi-action-question-answer left"></i>Veelgestelde vragen</a>
+                <a href="/nl-NL/ServiceVoorwaarden" class="footer-btn waves-effect waves-light btn"><i class="mdi-hardware-security left"></i>Privacy</a>
              </div>
           </div>
     
         </div>
       </div>
+   
     <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">
-                    © 2014 Copyright Rode Kruis
+                    &copy; 2015 Copyright Rode Kruis
                     <a class="grey-text text-lighten-4 right" href="http://www.rodekruis.nl" target="_blank">rodekruis.nl</a>
             </div>
           </div>

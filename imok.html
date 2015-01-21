@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=5.0" />
+        <title>Ik ben veilig</title>
+    <link href="Content/css.css" rel="stylesheet"/>
+
+    <link href="Content/kendouicss.css" rel="stylesheet"/>
+
+    <link href="Content/themes/base/css.css" rel="stylesheet"/>
+
+    <script src="bundles/jquery.js"></script>
+
+    <script src="bundles/jqueryui.js"></script>
+
+    <script src="bundles/jqueryval.js"></script>
+
+    <script src="bundles/modernizr.js"></script>
+
+    <script src="bundles/kendoui.js"></script>
+  
+    <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css"  media="screen,projection"/>
+    <link href="bower_components/mdi/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="Content/style.css"  media="screen,projection"/>
+    
+       
+    <script src="bundles/safeAndWell.js"></script>
+    
+
+
+    <link rel="shortcut icon" href="Content/favicon.ico" type="image/x-icon" />
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+</head>
+<body>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="/nl-NL">Nederlands (Dutch)</a></li>
+      <li><a href="/en-GB">English (Engels)</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="col light-blue darken-1">
+                  <a class="brand-logo"><img class="logoTop" src="Content/Images/nrk_logo.gif" alt="Nederlandse Rode Kruis logo" /></a>
+                  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                  <ul id="nav-mobile" class="side-nav">
+                    <li><a href="/nl-NL/Search"><i class="mdi-action-search left "></i> Ik zoek iemand</a></li>
+                    <li><a href="/nl-NL/ImOk"><i class="mdi-action-thumb-up left"></i>Ik ben veilig</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Taal wijzigen<i class="mdi-action-language left"></i></a></li>
+                 </ul>            
+                </div>
+            </div>
+        </div>
+  </nav>
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-action-thumb-up brown-text"></i></h3>
+          <h4>Ik ben veilig</h4>
+          <p class="left-align light">Als je betrokken bent bij een noodsituatie kan je op deze pagina &#39;ikbenveilig&#39; berichten plaatsen, die jouw verwanten kunnen vinden. Jezelf registreren op deze website is volledig vrijwillig en je kan meerdere malen een registratie aanmaken. Verwanten die jou zoeken krijgen enkel jouw voornaam, achternaam, geboortedatum, status en publiek bericht te zien. De overige gegevens krijgt de zoeker niet te zien. De zoeker moet altijd de voornaam, achternaam en een uniek persoonsgegeven van jou invullen. Vul deze dus ook in bij de registratie.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+      
+    <div class="container">
+        <div class="section">     
+
+        <div class="row">
+            <form class="col s12" action="/nl-NL/ImOk" method="post">
+                <script type="text/javascript">
+                    jQuery(document).ready(function ($) { $('#timeZoneOffset').val(new Date().getTimezoneOffset()); });
+                </script>
+                <div>
+                    <ul class="errors">
+			<li><span class="field-validation-valid" data-valmsg-for="" data-valmsg-replace="true"></span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="false">Het veld roepnaam is verplicht en mag maximaal 150 karakters bevatten.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="false">Het veld achternamen is verplicht en mag maximaal 150 karakters bevatten.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="Email1" data-valmsg-replace="false">Het veld e-mail mag maximaal 150 karakters bevatten en moet het formaat naam@domein.nl hebben.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="Email2" data-valmsg-replace="false">Het veld e-mail mag maximaal 150 karakters bevatten en moet het formaat naam@domein.nl hebben.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="Phone1" data-valmsg-replace="false">Het veld telefoonnummer mag alleen cijfers bevatten en maximaal 20 karakters. Gebruik geen spaties of streepjes.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="Phone2" data-valmsg-replace="false">Het veld telefoonnummer mag alleen cijfers bevatten en maximaal 20 karakters. Gebruik geen spaties of streepjes.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="Phone3" data-valmsg-replace="false">Het veld telefoonnummer mag alleen cijfers bevatten en maximaal 20 karakters. Gebruik geen spaties of streepjes.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="DateOfBirthString" data-valmsg-replace="false">Het veld geboortedatum bevat een verkeerd formaat, gebruik dd-mm-jjjj, bijvoorbeeld: 01-01-1970</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="Street" data-valmsg-replace="false">Het veld straat mag maximaal 150 karakters bevatten.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="HouseNumber" data-valmsg-replace="false">Het veld huisnummer mag maximaal 10 karakters bevatten.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="ZipCode" data-valmsg-replace="false">Het veld postcode mag maximaal 10 karakters bevatten.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="City" data-valmsg-replace="false">Het veld woonplaats mag maximaal 100 karakters bevatten.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="false">Het veld status is niet goed ingevuld.</span></li>
+			<li><span class="field-validation-valid" data-valmsg-for="Comments" data-valmsg-replace="false">Het veld publiek bericht mag maximaal 2000 karakters bevatten.</span></li>
+                </ul>
+
+                </div>
+                
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="mdi-action-account-circle prefix"></i>
+                  <input data-val="true" data-val-length="Registration_FirstName_TooLong" data-val-length-max="150" data-val-required="Registration_FirstName_Required" id="FirstName" name="FirstName" type="text" value="" />
+               <label for="FirstName" class="req">Jouw roepnaam</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                    <i class="mdi-action-account-circle prefix"></i>
+                  <input data-val="true" data-val-length="Registration_LastName_TooLong" data-val-length-max="150" data-val-required="Registration_LastName_Required" id="LastName" name="LastName" type="text" value="" />
+
+                  <label for="lastName" class="req">Jouw achternaam</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s1">
+                  <i class="mdi-social-group prefix"></i>
+		  <label class="req">Geslacht</label>
+		</div>
+		<div class="input-field col s11">
+		  <br/>
+                        <p>
+			    <input data-val="true" data-val-required="The GenderAsGender field is required." id="GenderAsGender1" name="GenderAsGender" type="radio" value="Male" />
+			    <label for="GenderAsGender1">Man</label>
+			</p>
+                        <p>
+			    <input id="GenderAsGender2" name="GenderAsGender" type="radio" value="Female" />
+			    <label for="GenderAsGender2">Vrouw</label>
+			</p>
+                        <p>
+			    <input checked="checked" id="GenderAsGender3" name="GenderAsGender" type="radio" value="None" />
+			    <label for="GenderAsGender3">Geen keuze</label>
+			</p>
+
+                </div>
+              </div>
+	      	      
+	      <div class="row">
+                  <div class="col s12 center">
+                    <h3><i class="mdi-action-perm-contact-cal brown-text"></i></h3>
+                    <h4>Vul jouw persoonsgegevens in</h4>
+                    <p class="left-align light">Vul zo veel mogelijk gegevens van jezelf in. Hierdoor wordt het eenvoudiger voor een verwant om jou te vinden.</p>
+                  </div>
+              </div>
+             
+	     <div class="row">
+                <div class="input-field col s12">
+                  <i class="mdi-communication-email prefix"></i>
+                  <input data-val="true" data-val-length="The field Email1 must be a string with a maximum length of 150." data-val-length-max="150" data-val-regex="Registration_EmailInvalid" data-val-regex-pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" id="Email1" name="Email1" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" type="text" value="" />
+		  <label for="Email1">Emailadressen, elke regel één</label>
+		  <input data-val="true" data-val-length="The field Email1 must be a string with a maximum length of 150." data-val-length-max="150" data-val-regex="Registration_EmailInvalid" data-val-regex-pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" id="Email2" name="Email2" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" type="text" value="" />                
+	    
+                </div>
+
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                   <i class="mdi mdi-calendar prefix"></i> 
+                   <input data-val="true" data-val-regex="The field DateOfBirthString must match the regular expression &#39;^$|^(?=\d)(?:(?:31(?!.(?:0?[2469]|11))|(?:30|29)(?!.0?2)|29(?=.0?2.(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))(?:\x20|$))|(?:2[0-8]|1\d|0?[1-9]))([-./])(?:1[012]|0?[1-9])[-./](?:1[6-9]|[2-9]\d)?\d\d)$&#39;." data-val-regex-pattern="^$|^(?=\d)(?:(?:31(?!.(?:0?[2469]|11))|(?:30|29)(?!.0?2)|29(?=.0?2.(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))(?:\x20|$))|(?:2[0-8]|1\d|0?[1-9]))([-./])(?:1[012]|0?[1-9])[-./](?:1[6-9]|[2-9]\d)?\d\d)$" id="DateOfBirthString" name="DateOfBirthString" pattern="^$|^(?=\d)(?:(?:31(?!.(?:0?[2469]|11))|(?:30|29)(?!.0?2)|29(?=.0?2.(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))(?:\x20|$))|(?:2[0-8]|1\d|0?[1-9]))([-./])(?:1[012]|0?[1-9])[-./](?:1[6-9]|[2-9]\d)?\d\d)$" type="text" value="" />
+
+                  <label for="DateOfBirthString">Geboortedatum (dd-mm-jjjj)</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                   <i class="mdi-communication-phone prefix"></i> 
+                   <input data-val="true" data-val-length="The field Phone1 must be a string with a maximum length of 20." data-val-length-max="20" data-val-regex="Registration_PhoneNumberInvalid" data-val-regex-pattern="^([0-9\s]*)$" id="Phone1" name="Phone1" pattern="^([0-9\s]*)$" type="text" value="" />
+                   <label for="Phone1">Telefoonnummers, enkel cijfers</label>
+		   <input data-val="true" data-val-length="The field Phone1 must be a string with a maximum length of 20." data-val-length-max="20" data-val-regex="Registration_PhoneNumberInvalid" data-val-regex-pattern="^([0-9\s]*)$" id="Phone2" name="Phone2" pattern="^([0-9\s]*)$" type="text" value="" />
+		   <input data-val="true" data-val-length="The field Phone1 must be a string with a maximum length of 20." data-val-length-max="20" data-val-regex="Registration_PhoneNumberInvalid" data-val-regex-pattern="^([0-9\s]*)$" id="Phone3" name="Phone3" pattern="^([0-9\s]*)$" type="text" value="" />
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col s12 center">
+                    <h3><i class="mdi-maps-my-location prefix brown-text"></i></h3>
+                    <h4>Adresgegevens</h4>
+                  </div>
+                </div>            
+              <div class="row">
+                <div class="input-field col s12">
+                   <input data-val="true" data-val-length="Registration_Street_TooLong" data-val-length-max="150" id="Street" name="Street" type="text" value="" />
+                  <label for="Street">Straatnaam van woonadres</label>
+                </div>
+              </div>
+	      <div class="row">
+                <div class="input-field col s12">
+                  <input data-val="true" data-val-length="Registration_HouseNumber_TooLong" data-val-length-max="10" id="HouseNumber" name="HouseNumber" type="text" value="" />
+                  <label for="HouseNumber">Huisnummer</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                   <input data-val="true" data-val-length="Registration_ZipCode_TooLong" data-val-length-max="10" id="ZipCode" name="ZipCode" type="text" value="" />
+                  <label for="ZipCode">Postcode van woonadres</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                   <input data-val="true" data-val-length="Registration_City_TooLong" data-val-length-max="100" id="City" name="City" type="text" value="" />
+                  <label for="City">Uw woonplaats</label>
+                </div>
+              </div>
+	      <div class="row">
+                  <div class="col s12 center">
+                    <h3><i class="mdi-communication-comment prefix brown-text"></i></h3>
+		    <h4>Bericht</h4>
+                    <p>Kies de statusberichten die op jou van toepassing zijn. Aanvullend schrijf je een publiek bericht dat een zoeker kan lezen.</p>
+                  </div>
+                </div>
+	      <div class="row">
+                <div class="input-field col s1">
+                  <i class="mdi-action-favorite prefix"></i>
+		  <label class="req">Status</label>
+		</div>
+		<div class="input-field col s11">
+		  <br/>
+                        <p>
+			    <input type="checkbox" name="MessageIds" id="MessageIds_1" value="Ik ben veilig"  />
+			    <label for="MessageIds_1">Ik ben veilig</label>
+			</p>
+                        <p>
+			    <input type="checkbox" name="MessageIds" id="MessageIds_2" value="Ik en mijn gezin zijn veilig"  />
+			    <label for="MessageIds_2">Ik en mijn gezin zijn veilig</label>
+			</p>
+                </div>
+              </div>
+	      <div class="row">
+                <div class="input-field col s12">
+		    <i class="mdi-communication-message prefix"></i>
+		    <textarea class="materialize-textarea" cols="20" data-val="true" data-val-length="Registration_Comments_TooLong" data-val-length-max="2000" id="Comments" name="Comments" rows="2"></textarea>
+		    <label for="Comments">Schrijf een bericht voor de zoeker</label>
+		  </div>
+              </div>
+	      
+	      
+	      <div class="row">
+                  <div class="col s12 center">
+		    <ul class="collection with-header">
+			<li class="collection-header"><h4>Voorwaarden</h4></li>
+			<li class="collection-item"><label for="ImOk_Disclaimer1">Door op &#39;Opslaan&#39; te drukken geef ik te kennen dat ik enkel mijzelf registreer, of &#233;&#233;n van mijn kinderen jonger dan 16 jaar.</label></li>
+			<li class="collection-item"><div><label for="ImOk_Disclaimer2">Door mijzelf te registreren, accepteer ik het gebruik van deze informatie, zoals beschreven op deze pagina en in de privacy verklaring </label><a href="/nl-NL/ServiceVoorwaarden" target="_blank" class="secondary-content"><i class="mdi-content-send"></i></a></div></li>
+    		    </ul>
+		  </div>
+              </div>
+              <div class="row">
+                  <div class="col s12 center">
+                     <button class="btn waves-effect waves-light" type="submit" name="action">Opslaan
+                        <i class="mdi-content-send right"></i>
+                    </button>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+
+  </div>
+      <div class="container">
+        <div class="section">
+    
+          <div class="row">
+            <div class="col s12 center">
+                <a href="/" class="footer-btn waves-effect waves-light btn"><i class="mdi-action-home left"></i>Home</a>
+                <a href="/nl-NL/Faq" class="footer-btn  waves-effect waves-light btn"><i class="mdi-action-question-answer left"></i>Veelgestelde vragen</a>
+                <a href="/nl-NL/ServiceVoorwaarden" class="footer-btn waves-effect waves-light btn"><i class="mdi-hardware-security left"></i>Privacy</a>
+             </div>
+          </div>
+    
+        </div>
+      </div>
+   
+    <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+                    &copy; 2015 Copyright Rode Kruis
+                    <a class="grey-text text-lighten-4 right" href="http://www.rodekruis.nl" target="_blank">rodekruis.nl</a>
+            </div>
+          </div>
+        </footer>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="bundles/init.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('.dropdown-button').dropdown({constrain_width: false, hover: false});
+        $('.button-collapse').sideNav();
+      });
+    </script>
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-6772797-37']);
+        _gaq.push(['_setDomainName', 'cloudapp.net']);
+        
+        
+        
+        _gaq.push(['_trackPageview']);
+        
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+    
+
+</body>
+</html>
