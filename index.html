@@ -21,6 +21,8 @@
     <script src="bundles/kendoui.js"></script>
   
     <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="Content/animate.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="Content/backtotop.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="Content/style.css"  media="screen,projection"/>
     
        
@@ -54,45 +56,51 @@
                     <li><a href="/nl-NL/Search"><i class="mdi-action-search left "></i> Ik zoek iemand</a></li>
                     <li><a href="/nl-NL/ImOk"><i class="mdi-action-thumb-up left"></i>Ik ben veilig</a></li>
                     <!-- Dropdown Trigger -->
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Taal<i class="mdi-action-language left"></i></a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Taal wijzigen<i class="mdi-action-language left"></i></a></li>
                  </ul>            
                 </div>
             </div>
         </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center" style="color: #DC281E">Ik ben veilig</h1>
-        <div class="row center">
-          <h5 class="header col s12 " style="color: #005883;">Na een ramp, jouw familie en vrienden laten weten dat het goed met je gaat, kan geliefden veel rust geven.</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="Content/images/background1.jpg" alt="background 1"></div>
-  </div>
+  <div class="index parallax-effect">
+		<div class="container">
+			<div class="index-content animated">
+				<h1 class="title">Ik ben veilig</h1>
+				<h5 class="subtitle">Na een ramp, jouw familie en vrienden laten weten dat het goed met je gaat, kan geliefden veel rust geven.</h5>
+			</div>
+		</div>
+	</div>
+  
     <div class="container">
         <div class="section">
     
           <!--   Icon Section   -->
           <div class="row">
-            <div class="col s12 m6">
+            <div class="col s12 m4">
               <div class="icon-block">
                 <a href="/nl-NL/ImOk"><h2 class="center brown-text"><i class="mdi-action-thumb-up"></i></h2></a>
-                <a href="/nl-NL/ImOk"><h5 class="center">Registreren</h5></a>
+                <a href="/nl-NL/ImOk"><h5 class="center">Ik ben veilig</h5></a>
     
-                <p class="light">Registreer dat je veilig bent. Klik op de 'Ik ben veilig' knop om jezelf op de site te registreren.</p>
+                <p class="light">Registreer dat je veilig bent. Klik op de link hierbovens om jezelf op de site te registreren. Familie en vrienden die iets van jou weten kunnn daarna jouw bericht lezen.</p>
               </div>
             </div>
     
-            <div class="col s12 m6">
+            <div class="col s12 m4">
               <div class="icon-block">
                 <a href="/nl-NL/Search"><h2 class="center brown-text"><i class="mdi-action-search"></i></h2></a>
-                <a href="/nl-NL/Search"><h5 class="center">Zoeken</h5></a>
+                <a href="/nl-NL/Search"><h5 class="center">Ik zoek iemand</h5></a>
     
                 <p class="light">Bezorgde familie en vrienden kunnen de lijst met geregistreerden doorzoeken door te klikken op de 'Ik zoek iemand' knop. Het resultaat van een succesvolle zoekopdracht is de roepnaam, achternaam en eventueel een kort bericht van uw familielid of vriend.</p>
+               </div>
+            </div>
+            
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <a href="/nl-NL/Search"><h2 class="center brown-text"><i class="mdi-social-share"></i></h2></a>
+                <a href="/nl-NL/Search"><h5 class="center">Social media</h5></a>
+    
+                <p class="light">Als je op deze website iemand hebt gezocht of gevonden hebt, dan kan je dit daarna direct aan je sociale netwerk laten weten, zodat anderen ook op de hoogte zijn.</p>
                </div>
             </div>
 
@@ -101,10 +109,6 @@
         </div>
     </div>
     
-    <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="Content/Images/background2.jpg" alt="Background 2"></div>
-  </div>
-
   <div class="container">
     <div class="section">
 
@@ -112,7 +116,7 @@
         <div class="col s12 center">
           <h3><i class="mdi-notification-phone-in-talk brown-text"></i></h3>
           <h4>Wat kunt u nog meer doen?</h4>
-          <p class="left-align light">U kunt ook contact op nemen met het callcenter van het SIS op 0300000000</p>
+          <p class="left-align light">U kunt ook contact op nemen met het publieksinformatienummer van de gemeente op .............</p>
         </div>
       </div>
 
@@ -120,23 +124,23 @@
   </div>
   
   <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <a href="/" class="footer-btn waves-effect waves-light btn-large"><i class="mdi-action-home left"></i>Home</a>
-                <a href="/nl-NL/Faq" class="footer-btn  waves-effect waves-light btn-large"><i class="mdi-action-question-answer left"></i>FAQ</a>
-                <a href="/nl-NL/ServiceVoorwaarden" class="footer-btn waves-effect waves-light btn-large"><i class="mdi-hardware-security left"></i>Privacy</a>
-         </div>
+        <div class="section">
+    
+          <div class="row">
+            <div class="col s12 center">
+              <a href="/" class="footer-btn waves-effect waves-light btn"><i class="mdi-action-home left"></i>Home</a>
+                    <a href="/nl-NL/Faq" class="footer-btn  waves-effect waves-light btn"><i class="mdi-action-question-answer left"></i>Veelgestelde vragen</a>
+                    <a href="/nl-NL/ServiceVoorwaarden" class="footer-btn waves-effect waves-light btn"><i class="mdi-hardware-security left"></i>Privacy</a>
+             </div>
+          </div>
+    
+        </div>
       </div>
-
-    </div>
-  </div>
    
     <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">
-                    © 2014 Copyright Rode Kruis
+                    &copy; 2015 Copyright Rode Kruis
                     <a class="grey-text text-lighten-4 right" href="http://www.rodekruis.nl" target="_blank">rodekruis.nl</a>
             </div>
           </div>
@@ -144,6 +148,7 @@
     <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
     <script type="text/javascript" src="bundles/init.js"></script>
+    <script type="text/javascript" src="bundles/backtotop.js"></script>
 
     <script>
     $(document).ready(function(){
