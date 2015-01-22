@@ -40,10 +40,27 @@
 </head>
 <body>
 
+    <script type="text/javascript">
+        function Search(deze, registerId) {
+            $.ajax({
+                type: "POST",
+                url: '/nl-NL/RegisterFound',
+                data: "{id:'" + registerId + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                success: function() {
+                    $(deze).hide();
+                    $(deze).next().show();
+                }
+            });
+        }
+    </script>
+
+        
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="/nl-NL/search">Nederlands (Dutch)</a></li>
-      <li><a href="/en-GB/search">English (Engels)</a></li>
+      <li><a href="/nl-NL/Search">Nederlands (Dutch)</a></li>
+      <li><a href="/en-GB/Search">English (Engels)</a></li>
     </ul>
     <nav>
         <div class="nav-wrapper">
@@ -62,17 +79,101 @@
         </div>
   </nav>
     
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-action-thumb-up brown-text"></i></h3>
+          <h4>Gevonden personen</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+      
+  <div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content black-text">
+                  <span class="card-title">Maarten van der Veen</span>
+                  <p><i class="mdi mdi-calendar prefix small"></i>&nbsp;&nbsp; 18-2-1983</p>
+                  <p><i class="mdi mdi-timetable prefix small"></i>&nbsp;&nbsp;20-1-2015 09:08</p>
+                  <p><i class="mdi-action-favorite prefix small"></i>&nbsp;&nbsp;ik ben veilig</p>
+                   <span><i class="mdi-communication-message prefix small"></i>&nbsp;&nbsp;Maak je niet ongerust, ik ben op een opvanglocatie.</span>
+                </div>
+                <div class="card-action white">
+                    <span class="card-title activator black-text"><i class="mdi-social-share right black-text"></i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Deel het met je sociale netwerk <i class="mdi-navigation-close right"></i></span>
+                   <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Ik heb iemand gevonden via www.ikbenveilig.nl&p[summary]=Ik heb iemand gevonden via %23Ikbenveilig&p[url]=http://www.ikbenveilig.nl"><i class="mdi mdi-facebook-box grey-text small"></i></a>
+                  <a target="_blank" href="http://www.linkedin.com/shareArticle?title=Ik heb iemand gevonden via www.ikbenveilig.nl&summary=Ik heb iemand gevonden via %23Ikbenveilig&url=http://www.ikbenveilig.nl"><i class="mdi mdi-linkedin grey-text small"></i></a>
+                  <a target="_blank" href="http://hyves-share.nl/button/blog/?title=Ik heb iemand gevonden via www.ikbenveilig.nl&body=Ik heb iemand gevonden via %23Ikbenveilig"><i class="mdi mdi-google-plus-box grey-text small"></i></a>
+                  <a target="_blank" href="https://twitter.com/intent/tweet?related=rodekruis&text=Ik heb iemand gevonden via %23Ikbenveilig&tw_p=tweetbutton&url=http://www.ikbenveilig.nl"><i class="mdi mdi-twitter-box grey-text small"></i></a> 
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content black-text">
+                  <span class="card-title">Maarten van der Veen</span>
+                  <p><i class="mdi mdi-calendar prefix small"></i>&nbsp;&nbsp; 18-2-1983</p>
+                  <p><i class="mdi mdi-timetable prefix small"></i>&nbsp;&nbsp;20-1-2015 09:08</p>
+                  <p><i class="mdi-action-favorite prefix small"></i>&nbsp;&nbsp;ik ben veilig</p>
+                   <span><i class="mdi-communication-message prefix small"></i>&nbsp;&nbsp;Maak je niet ongerust, ik ben op een opvanglocatie.</span>
+                </div>
+                <div class="card-action white">
+                    <span class="card-title activator black-text"><i class="mdi-social-share right black-text"></i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Deel het met je sociale netwerk <i class="mdi-navigation-close right"></i></span>
+                   <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Ik heb iemand gevonden via www.ikbenveilig.nl&p[summary]=Ik heb iemand gevonden via %23Ikbenveilig&p[url]=http://www.ikbenveilig.nl"><i class="mdi mdi-facebook-box grey-text small"></i></a>
+                  <a target="_blank" href="http://www.linkedin.com/shareArticle?title=Ik heb iemand gevonden via www.ikbenveilig.nl&summary=Ik heb iemand gevonden via %23Ikbenveilig&url=http://www.ikbenveilig.nl"><i class="mdi mdi-linkedin grey-text small"></i></a>
+                  <a target="_blank" href="http://hyves-share.nl/button/blog/?title=Ik heb iemand gevonden via www.ikbenveilig.nl&body=Ik heb iemand gevonden via %23Ikbenveilig"><i class="mdi mdi-google-plus-box grey-text small"></i></a>
+                  <a target="_blank" href="https://twitter.com/intent/tweet?related=rodekruis&text=Ik heb iemand gevonden via %23Ikbenveilig&tw_p=tweetbutton&url=http://www.ikbenveilig.nl"><i class="mdi mdi-twitter-box grey-text small"></i></a> 
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m12">
+                    <div class="card">
+                        <div class="card-content black-text">
+                          <span class="card-title">Niet gevonden?</span>
+                          <p class="light">Indien u de persoon niet hebt gevonden kunt u het op een later moment nog een keer proberen. Mogelijk heeft de persoon zich in de tussentijd geregistreerd. U kunt ook via social media zoeken, wij helpen u op weg:</p>
+                        </div>  
+                        <div class="card-action white">
+                             <span class="card-title grey-text text-darken-4 small"><small>Zoek verder: </small></span>
+                            <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Ik zocht, maar kon niet vinden&p[summary]=%23ikbenveilig ik ben op zoek gegaan, maar kon helaas niet vinden. Ik zoek:&p[url]=http://www.ikbenveilig.nl"><i class="mdi mdi-facebook-box brown-text small"></i></a>
+                            <a target="_blank" href="http://www.linkedin.com/shareArticle?title=Ik zocht, maar kon niet vinden&summary=%23ikbenveilig ik ben op zoek gegaan, maar kon helaas niet vinden. Ik zoek:&url=http://www.ikbenveilig.nl"><i class="mdi mdi-linkedin brown-text small"></i></a>
+                            <a target="_blank" href="http://hyves-share.nl/button/blog/?title=Ik zocht, maar kon niet vinden&body=%23ikbenveilig ik ben op zoek gegaan, maar kon helaas niet vinden. Ik zoek:"><i class="mdi mdi-google-plus-box brown-text small"></i></a>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?related=rodekruis&text=%23ikbenveilig ik ben op zoek gegaan, maar kon helaas niet vinden. Ik zoek:&tw_p=tweetbutton&url=http://www.ikbenveilig.nl"><i class="mdi mdi-twitter-box brown-text small"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="section">
             <div class="row">
                 <div class="col s12 center">
                   <h3><i class="mdi-action-search brown-text"></i></h3>
-                  <h4>Ik zoek iemand</h4>
-                  <p class="light">Zoek een verwant door zoveel mogelijk persoonsgegevens in te vullen.</p>
+                  <h4>Zoek nogmaals</h4>
                 </div>
             </div>
         </div>
     </div>
+    
+    
     <div class="container">
         <div class="section">     
 
