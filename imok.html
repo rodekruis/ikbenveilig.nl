@@ -11,7 +11,7 @@
     <link href="Content/themes/base/css.css" rel="stylesheet"/>
 
     <script src="bundles/jquery.js"></script>
-
+    
     <script src="bundles/jqueryui.js"></script>
 
     <script src="bundles/jqueryval.js"></script>
@@ -21,9 +21,10 @@
     <script src="bundles/kendoui.js"></script>
   
     <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css"  media="screen,projection"/>
-    <link href="bower_components/mdi/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="Content/animate.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="Content/backtotop.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="Content/style.css"  media="screen,projection"/>
-    
+    <link type="text/css" rel="stylesheet" href="Content/cookiecuttr.css"  media="screen,projection"/>
        
     <script src="bundles/safeAndWell.js"></script>
     
@@ -284,31 +285,37 @@
           </div>
         </footer>
     <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="bower_components/jquery-cookie/jquery.cookie.js"></script>
+    <script src="bundles/jquery.cookiecuttr.js"></script>
     <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
     <script type="text/javascript" src="bundles/init.js"></script>
+    <script type="text/javascript" src="bundles/backtotop.js"></script>
 
     <script>
     $(document).ready(function(){
         $('.dropdown-button').dropdown({constrain_width: false, hover: false});
         $('.button-collapse').sideNav();
+        $.cookieCuttr({cookieAnalyticsMessage: 'We gebruiken cookies, alleen om het aantal bezoekers te meten, we slaan geen persoonlijke informatie op in cookies.', cookieDeclineButton: true, cookieAcceptButtonText: 'Accepteer cookie', cookieDeclineButtonText: 'Weiger cookie', cookieWhatAreLinkText: 'Wat zijn cookies?', cookieWhatAreTheyLink: 'http://www.consumentenbond.nl/test/elektronica-communicatie/veilig-online/privacy-op-internet/extra/wat-zijn-cookies/', cookieNotificationLocationBottom: true});
       });
     </script>
     
     <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-6772797-37']);
-        _gaq.push(['_setDomainName', 'cloudapp.net']);
         
-        
-        
-        _gaq.push(['_trackPageview']);
-        
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
+        if (jQuery.cookie('cc_cookie_decline') == "cc_cookie_decline") {
+            // do nothing
+          } else {
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-6772797-37']);
+            _gaq.push(['_setDomainName', 'cloudapp.net']);
+            _gaq.push(['_trackPageview']);
+          
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document. getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+          }
+         
     </script>
     
     
