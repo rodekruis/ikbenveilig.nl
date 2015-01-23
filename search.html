@@ -44,8 +44,8 @@
 
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="/nl-NL/search">Nederlands (Dutch)</a></li>
-      <li><a href="/en-GB/search">English (Engels)</a></li>
+      <li><a href="/nl-NL/imok" id="languageDutch">Nederlands (Dutch)</a></li>
+      <li><a href="/en-GB/imok" id="languageEnglish">English (Engels)</a></li>
     </ul>
     <nav>
         <div class="nav-wrapper">
@@ -54,8 +54,8 @@
                   <a class="brand-logo"><img class="logoTop" src="Content/Images/nrk_logo.gif" alt="Nederlandse Rode Kruis logo" /></a>
                   <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                   <ul id="nav-mobile" class="side-nav">
-                    <li><a href="/nl-NL/Search"><i class="mdi-action-search left "></i> Ik zoek iemand</a></li>
-                    <li><a href="/nl-NL/ImOk"><i class="mdi-action-thumb-up left"></i>Ik ben veilig</a></li>
+                    <li><a href="/nl-NL/Search" id="searchLink"><i class="mdi-action-search left "></i> Ik zoek iemand</a></li>
+                    <li><a href="/nl-NL/ImOk" id="imokLink"><i class="mdi-action-thumb-up left"></i>Ik ben veilig</a></li>
                     <!-- Dropdown Trigger -->
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Taal wijzigen<i class="mdi-action-language left"></i></a></li>
                  </ul>            
@@ -182,14 +182,14 @@
         </div>
 
   </div>
-      <div class="container">
+        <div class="container">
         <div class="section">
     
           <div class="row">
             <div class="col s12 center">
-                <a href="/" class="footer-btn waves-effect waves-light btn"><i class="mdi-action-home left"></i>Home</a>
-                <a href="/nl-NL/Faq" class="footer-btn  waves-effect waves-light btn"><i class="mdi-action-question-answer left"></i>Veelgestelde vragen</a>
-                <a href="/nl-NL/ServiceVoorwaarden" class="footer-btn waves-effect waves-light btn"><i class="mdi-hardware-security left"></i>Privacy</a>
+                <a href="/" class="footer-btn waves-effect waves-light btn" id="homeLink"><i class="mdi-action-home left"></i>Home</a>
+                <a href="/nl-NL/Faq" class="footer-btn  waves-effect waves-light btn" id="faqLink"><i class="mdi-action-question-answer left"></i>Veelgestelde vragen</a>
+                <a href="/nl-NL/ServiceVoorwaarden" class="footer-btn waves-effect waves-light btn" id="privacyLink"><i class="mdi-hardware-security left"></i>Privacy</a>
              </div>
           </div>
     
@@ -200,7 +200,7 @@
           <div class="footer-copyright">
             <div class="container">
                     &copy; 2015 Copyright Rode Kruis
-                    <a class="grey-text text-lighten-4 right" href="http://www.rodekruis.nl" target="_blank">rodekruis.nl</a>
+                    <a class="grey-text text-lighten-4 right" href="http://www.rodekruis.nl" target="_blank" id="corporateLink">rodekruis.nl</a>
             </div>
           </div>
         </footer>
@@ -213,31 +213,41 @@
 
     <script>
     $(document).ready(function(){
-        $('.dropdown-button').dropdown({constrain_width: false, hover: false});
+        $('#timeZoneOffset').val(new Date().getTimezoneOffset());
+	$('.dropdown-button').dropdown({constrain_width: false, hover: false});
         $('.button-collapse').sideNav();
         $.cookieCuttr({cookieAnalyticsMessage: 'We gebruiken cookies, alleen om het aantal bezoekers te meten, we slaan geen persoonlijke informatie op in cookies.', cookieDeclineButton: true, cookieAcceptButtonText: 'Accepteer cookie', cookieDeclineButtonText: 'Weiger cookie', cookieWhatAreLinkText: 'Wat zijn cookies?', cookieWhatAreTheyLink: 'http://www.consumentenbond.nl/test/elektronica-communicatie/veilig-online/privacy-op-internet/extra/wat-zijn-cookies/', cookieNotificationLocationBottom: true});
       });
     </script>
     
-    <script type="text/javascript">
-        
-        if (jQuery.cookie('cc_cookie_decline') == "cc_cookie_decline") {
+    <script>
+	if (jQuery.cookie('cc_cookie_decline') == "cc_cookie_decline") {
             // do nothing
           } else {
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-6772797-37']);
-            _gaq.push(['_setDomainName', 'cloudapp.net']);
-            _gaq.push(['_trackPageview']);
-          
-            (function() {
-              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-              var s = document. getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-          }
-         
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  
+	    // On every domain.
+	    ga('create', 'UA-6772797-37', 'auto', {'allowLinker': true});
+	    
+	    // anonymize every ip
+	    ga('set', 'anonymizeIp', true);    
+	    
+	    // List of every domain to share linker parameters.
+	    ga('require', 'linker');
+	    ga('linker:autoLink', ['ikbenveilig.nl', 'ikbenveilig.rodekruis.nl', 'cloudapp.net']);
+	    ga('send', 'pageview'); // Send hits after initializing the auto-linker plug-in.
+            
+            // TODO:
+	    //Add event listener for search form submission after validation has completed
+    	    //	ga('send', 'event', 'search', 'submit', 'form buttons');
+
+	}	
     </script>
-    
+    <!-- add more tracking listeners -->
+    <script type="text/javascript" src="bundles/tracking.js"></script>    
     
 
 </body>

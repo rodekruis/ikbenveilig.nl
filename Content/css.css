@@ -392,6 +392,7 @@ button.landing {
     padding: 10px 6px;
 }
 
+/*
 input[type=text]:focus:valid {
     background: #fff url(valid.png) no-repeat 98% center;
 }
@@ -399,6 +400,7 @@ input[type=text]:focus:valid {
 input[type=text]:focus:invalid,input[type=text].input-validation-error:focus {
     background: #fff url(invalid.png) no-repeat 98% center;
 }
+*/
 
 a img,fieldset,.socialMedia>div a,.socialMedia>div img {
     border: none 0;
